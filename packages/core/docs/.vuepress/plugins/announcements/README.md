@@ -36,11 +36,11 @@ announcements:
     activeTill: 2022-02-28
 ```
 
-This example shows an announcement titled "Important bold title text" from 15th till 25th of February and a second notification from 18th till 28th of February titled "Did you know?". The action in the first will be a `<router-link>` "Go home". 
+This example shows two announcements. The first, titled "Important bold title text", is shown from 15th till 25th of February. The second is shown from 18th till 28th of February and titled "Did you know?". Actions, like in the first example, will be translated into `<router-link>`s. 
 
 The `activeFrom` and `activeTill` parameter can be any string that Date.parse can handle. ISO date strings is recommended for compatibility.
 
- > Attention: without timezone information, the timestamp will assumed to be in UTC!
+ > Attention: without timezone information, timestamps will assumed to be in UTC!
 
 | Parameter  |        Default       |    Details    |
 |------------|----------------------|---------------|
