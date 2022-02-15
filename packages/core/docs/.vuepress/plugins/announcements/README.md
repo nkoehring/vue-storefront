@@ -36,7 +36,7 @@ announcements:
     activeTill: 2022-02-28
 ```
 
-This example shows a notification titled "Important bold title text" from 15th till 25th of February and a second notification from 18th till 28th of February.
+This example shows an announcement titled "Important bold title text" from 15th till 25th of February and a second notification from 18th till 28th of February titled "Did you know?". The action in the first will be a `<router-link>` "Go home". 
 
 The `activeFrom` and `activeTill` parameter can be any string that Date.parse can handle. ISO date strings is recommended for compatibility.
 
@@ -49,3 +49,7 @@ The `activeFrom` and `activeTill` parameter can be any string that Date.parse ca
 | activeFrom | required, no default | DateTime, Announcement will not be shown before this date |
 | activeTill | required, no default | DateTime, Announcement will not be shown after this date  |
 | actions    | optional             | List of { title, href } |
+
+## TODO
+
+`vuepress-announcements` is in a very early stage. It lacks features like themeability and doesn't handle page changes in a good way. An option to show global instead of per-page announcements might be desirable as well.
