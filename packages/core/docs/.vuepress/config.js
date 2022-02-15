@@ -29,6 +29,15 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/favicon.png' }],
 
+    // PWA
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#22c34b' }],
+    ['meta', { name: 'background-color', content: '#FFFFFF' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'white' }],
+    ['link', { rel: 'apple-touch-icon', href: '/favicon.png' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/favicon.png' }],
+
     // HubSpot
     ['script', { async: true, defer: true, src: 'https://js.hs-scripts.com/8443671.js', id: 'hs-script-loader' }],
 
@@ -88,7 +97,19 @@ module.exports = {
     ],
     '@vuepress/active-header-links',
     '@vuepress/search',
-    resolve(__dirname, './plugins/meta/index.js')
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: true,
+        popupConfig: {
+          message: 'We updated the documentation.',
+          buttonText: 'Load Updates'
+        }
+      }
+    ],
+    resolve(__dirname, './plugins/meta/index.js'),
+    resolve(__dirname, './plugins/announcements/index.js')
   ],
 
   /**
@@ -122,6 +143,7 @@ module.exports = {
           ['/integrations/', '🔌 Integrations'],
           ['/general/enterprise', '🚀 Enterprise'],
           ['/general/support', '🙋 Support'],
+          ['/general/events', '📅 Events'],
         ]
       },
       {

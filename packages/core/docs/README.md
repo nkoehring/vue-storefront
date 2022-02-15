@@ -1,3 +1,22 @@
+---
+title: Meet Vue Storefront
+announcements:
+  - title: ⌨ Hack on Vue Storefront
+    content: There will be a hackathon on 28th of February and you're all invited to join!
+    activeFrom: 2022-02-15T00:00:00
+    activeTill: 2022-02-28T00:00:00
+    actions:
+      - title: Go To Events
+        href: general/events.html
+  - title: ⚠ Hackathon today!
+    content: Join our Hackathon today from 10:00 till 18:00!
+    activeFrom: 2022-02-28T00:00:00
+    activeTill: 2022-02-28T19:00:00
+    actions:
+      - title: Go To Events
+        href: general/events.html
+---
+
 # Meet Vue Storefront
 
 _Vue Storefront_ is a ___platform-agnostic e-commerce PWA frontend framework___ that can work with any e-commerce backend API. Additionally, thanks to _low coupling and high cohesion_, it can connect to other services, giving you the freedom to work with the technologies you know and love, be it CMS, ERP, PIM, or anything else.
